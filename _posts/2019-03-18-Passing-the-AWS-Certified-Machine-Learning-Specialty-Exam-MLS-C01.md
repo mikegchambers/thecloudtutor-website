@@ -12,7 +12,7 @@ _(* Actually it was the second day, but that sounds less dramatic!)_
 ## TL;DR
 > - Exam should be called: **_The AWS Certified Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL) Specialty Exam_**
 - Around 50% of the exam is focused on **pure Machine Learning** or Deep Learning
-- While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a **good working knowledge** of the key aspects and be able to do some lite maths
+- While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a **good working knowledge** of the key aspects and be able to do some simple maths
 - AWS’s flagship ML/DL service - **AWS SageMaker** - is the single most mentioned service in the exam
 - Understand how to architect **AWS's AI API services**
 - At times there is a decidedly **Big Data** feel
