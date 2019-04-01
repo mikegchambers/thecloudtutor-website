@@ -43,7 +43,7 @@ Let's look into each of these subject areas in more detail:
 
 ## Machine Learning / Deep Learning
 
-By far the biggest portion of the exam is dedicated to proving your knowledge of ML and DL.  While you don't need a deep understanding of the statistical mathematics and probability behind the subject you need a good working knowledge of the key aspects and be able to do some lite maths.
+By far the biggest portion of the exam is dedicated to proving your knowledge of ML and DL.  While you don't need a deep understanding of the statistical mathematics and probability behind the subject you need a good working knowledge of the key aspects and be able to do some simple maths.
 
 You need to have a solid grasp on these concepts:
 
@@ -145,10 +145,10 @@ Make sure you are comfortable and preferably have experience with:
 
 So did this exam add anything to the _'which is harder 'pro' or 'specialty'_ debate?  Well from a 10,000-foot view the exam looked like a 'pro' exam:  
 
-- The questions were wordy, 
-- the answers could be wordy, 
-- the time limit is 3 hours 
-- there are 65 questions.  
+- The questions were wordy 
+- The answers could be wordy
+- The time limit is 3 hours 
+- There are 65 questions
 
 But at the end of the day, whether this is harder than a pro exam or not yet again falls to your background:
 
