@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="the Cloud Tutor" href="https://thecloudtutor.com/feed.xml"/>
+
+    <!-- Font Awesome -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/font-awesome.min.css">
+    
+    
+
+    <!-- Google Fonts -->
+    
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+    
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/vendor/katex.min.css">
+    <script src="/assets/js/vendor/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Passing the AWS Certified Machine Learning Specialty Exam | the Cloud Tutor</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Passing the AWS Certified Machine Learning Specialty Exam" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’ve been put off taking AWS Beta exams ever since the 2016 Security Specialty debacle, so when it came to the AWS Certified Machine Learning Specialty Exam (MLS-C01), I decided to wait it out, and I took the ‘real’ exam the first day it was released. In this post, I will go through my thoughts on the exam, and how to pass it." />
+<meta property="og:description" content="I’ve been put off taking AWS Beta exams ever since the 2016 Security Specialty debacle, so when it came to the AWS Certified Machine Learning Specialty Exam (MLS-C01), I decided to wait it out, and I took the ‘real’ exam the first day it was released. In this post, I will go through my thoughts on the exam, and how to pass it." />
+<link rel="canonical" href="https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html" />
+<meta property="og:url" content="https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html" />
+<meta property="og:site_name" content="the Cloud Tutor" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-03-18T00:00:00+10:00" />
+<script type="application/ld+json">
+{"headline":"Passing the AWS Certified Machine Learning Specialty Exam","dateModified":"2019-03-18T00:00:00+10:00","datePublished":"2019-03-18T00:00:00+10:00","description":"I’ve been put off taking AWS Beta exams ever since the 2016 Security Specialty debacle, so when it came to the AWS Certified Machine Learning Specialty Exam (MLS-C01), I decided to wait it out, and I took the ‘real’ exam the first day it was released. In this post, I will go through my thoughts on the exam, and how to pass it.","mainEntityOfPage":{"@type":"WebPage","@id":"https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html"},"@type":"BlogPosting","url":"https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Manual seo tags -->
+    <!--
+    <title>Passing the AWS Certified Machine Learning Specialty Exam | the Cloud Tutor</title>
+    <meta name="description" content="I’ve been put off taking AWS Beta exams ever since the 2016 Security Specialty debacle, so when it came to the AWS Certified Machine Learning Specialty Exam ...">
+    -->
+</head>
+
+  <body>
+    <header class="site-header">
+    
+    <!-- Logo and title -->
+	<div class="branding">
+		<a href="/">
+			<img alt="logo img" class="avatar" src="/assets/img/tcc-logo.png" alt=""/>
+		</a>
+
+		<h1 class="site-title">
+			<a alt="the Cloud Tutor" href="/"> 
+        the Cloud Tutor
+      </a>
+		</h1>
+	</div>
+    
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a name="pull" id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+    
+    <!-- Menu -->
+    <ul class="hide">
+        <!-- Auto Generation of NORMAL pages in the navbar -->
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" name="About" 
+               href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+        <!-- Auto Generation of SPECIAL pages in the navbar -->
+        
+          
+            <li class="separator"> | </li>
+            <li>
+              <a class="clear" href="/search" name="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+          
+            <li class="separator"> | </li>
+            <li>
+              <a class="clear" href="/tags" name="tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+    </ul>
+        
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header id="main" style="background-image: url('')">
+    
+      <h1 id="Passing+the+AWS+Certified+Machine+Learning+Specialty+Exam" class="title">Passing the AWS Certified Machine Learning Specialty Exam</h1>
+      <p class="meta">
+      March 18, 2019
+      
+      </p>
+    
+  </header>
+  <section class="post-content">
+  
+      <p>I’ve been put off taking AWS Beta exams ever since the 2016 Security Specialty debacle, so when it came to the <strong>AWS Certified Machine Learning Specialty Exam</strong> <em>(MLS-C01)</em>, I decided to wait it out, and I took the ‘real’ exam the first day it was released.  In this post, I will go through my thoughts on the exam, and how to pass it. <!--more--></p>
+
+<p><em>(* Actually it was the second day, but that sounds less dramatic!)</em></p>
+
+<h2 id="tldr">TL;DR</h2>
+<blockquote>
+  <ul>
+    <li>Exam should be called: <strong><em>The AWS Certified Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL) Specialty Exam</em></strong></li>
+    <li>Around 50% of the exam is focused on <strong>pure Machine Learning</strong> or Deep Learning</li>
+    <li>While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a <strong>good working knowledge</strong> of the key aspects and be able to do some lite maths</li>
+    <li>AWS’s flagship ML/DL service - <strong>AWS SageMaker</strong> - is the single most mentioned service in the exam</li>
+    <li>Understand how to architect <strong>AWS’s AI API services</strong></li>
+    <li>At times there is a decidedly <strong>Big Data</strong> feel</li>
+    <li>If you’re comfortable with ML/DL and AWS, <strong>this exam is do-able</strong></li>
+    <li>I am a Training Architect for <strong><a href="https://linuxacademy.com">Linux Academy</a></strong></li>
+  </ul>
+</blockquote>
+
+<h2 id="general-thoughts">General Thoughts</h2>
+
+<p>Let’s get this out of the way right up front;  The <em>AWS Certified Machine Learning Specialty Exam</em> should actually be called  <strong>The AWS Certified Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL) Specialty Exam</strong>.  Maybe that would have been too long of a title, but it would be more accurate.</p>
+
+<p>Naming aside, this is still unlike any of the other AWS exams…</p>
+
+<p>At the time of writing, each of the other AWS exams focuses on - as you would expect - the AWS services within the subject area of the exam.   This includes the Specialty exams which focus on a deep level of knowledge in their respective areas, Networking, Big Data and, Security but primarily through AWS services and AWS ethos.</p>
+
+<p>The AWS Certified Machine Learning Specialty Exam is different, as around 50% of the exam is focused on pure Machine Learning or Deep Learning. This means you could gain a reasonable percentage in this exam with no knowledge of AWS at all. <em>(But you wouldn’t pass!)</em></p>
+
+<h3 id="subject-breakdown">Subject Breakdown</h3>
+<p>(As usual) forget the AWS Exam Guide, here is the breakdown:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ML/DL</td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td>AWS SageMaker</td>
+      <td>25%</td>
+    </tr>
+    <tr>
+      <td>Other AWS Services</td>
+      <td>25%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Let’s look into each of these subject areas in more detail:</p>
+
+<h2 id="machine-learning--deep-learning">Machine Learning / Deep Learning</h2>
+
+<p>By far the biggest portion of the exam is dedicated to proving your knowledge of ML and DL.  While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a good working knowledge of the key aspects and be able to do some lite maths.</p>
+
+<p>You need to have a solid grasp on these concepts:</p>
+
+<ul>
+  <li>Understand the difference between <strong>supervised</strong>, <strong>unsupervised</strong> and <strong>reinforcement</strong> learning.</li>
+  <li>Know the purpose behind <strong>training</strong>, <strong>validation</strong> and <strong>testing</strong> data and how its managed.</li>
+  <li>Have a general understanding of <strong>hyperparameters</strong> and some of the common ones used by various algorithms.</li>
+  <li>Understand <strong>regularisation</strong>, what it does and some ways to achieve it.</li>
+  <li>Know about <strong>regression</strong>, and <strong>gradient decent</strong>.</li>
+</ul>
+
+<p>You should know about ‘input data’:</p>
+
+<ul>
+  <li>Data <strong>Visualisation</strong> using Jupyter notebooks, but also other tools like <strong>AWS QuickSight</strong>.</li>
+  <li>Understand <strong>Feature engineering</strong> and when to use what technique.</li>
+  <li>Know what to do when data in unbalanced or missing.</li>
+</ul>
+
+<p>You need to know when to use <strong>which model types</strong> (algorithms) - and <strong>what they are</strong>, and some high level <strong>configuration</strong>:</p>
+
+<ul>
+  <li><strong>Logistical Regression</strong></li>
+  <li><strong>Linear Regression</strong></li>
+  <li><strong>Support Vector Machines</strong></li>
+  <li><strong>Decision Trees / Random Forests</strong></li>
+  <li><strong>K-means Clustering</strong></li>
+  <li><strong>K-Nearest Neighbours</strong></li>
+</ul>
+
+<p>And you need to have a good understanding of <strong>deep learning</strong> models and their uses:</p>
+
+<ul>
+  <li><strong>Convolutional Neural Networks</strong> (CNN)</li>
+  <li><strong>Recurrent Neural Networks</strong> (RNN)</li>
+</ul>
+
+<p>Many questions focus on how to <strong>measure</strong>, understand and improve the <strong>performance</strong> of ML/DL models.  You might get questions with graphs and charts, and be expected to make calculations.   You should understand:</p>
+
+<ul>
+  <li><strong>Accuracy</strong></li>
+  <li><strong>Gini Impurity</strong></li>
+  <li><strong>Confusion Matrix</strong></li>
+  <li><strong>F1 Score</strong></li>
+  <li><strong>Sensitivity / Specificity</strong></li>
+  <li><strong>Precision</strong></li>
+  <li><strong>Recall</strong></li>
+</ul>
+
+<p>All of the above is from the point of view of ML/DL computer science.  There is no AWS knowledge in the above.  That all follows on from here…</p>
+
+<h2 id="aws-sagemaker">AWS SageMaker</h2>
+
+<p>AWS’s flagship ML/DL service - <strong>AWS SageMaker</strong> - is the single most mentioned service in the exam.  That should come as no surprise.</p>
+
+<p>AWS has dropped its ‘support’ for <strong>AWS ML</strong> which is no longer available to anyone who’s not already using it - however, AWS ML still popped up in a couple of answers in this exam.</p>
+
+<p>For the exam you should know:</p>
+
+<ul>
+  <li>What SageMaker <strong>actually is</strong>, and generally speaking how it’s architected</li>
+  <li>How <strong>Jupyter notebooks</strong> fit into SageMaker and how they are used</li>
+  <li>How to access <strong>secure data</strong></li>
+  <li>How to <strong>secure a Jupyter Notebook</strong></li>
+  <li>How you <strong>train</strong> models</li>
+  <li>How to <strong>deploy</strong> models</li>
+  <li>Know about <strong>Hyperparameter Optimisation</strong></li>
+</ul>
+
+<p>It goes without saying that you should have a general knowledge of all the AWS optimized algorithms, including:</p>
+<ul>
+  <li><strong>BlazingText</strong></li>
+  <li><strong>Image Classification Algorithm</strong></li>
+  <li><strong>K-Means</strong></li>
+  <li><strong>K-Nearest Neighbours</strong></li>
+  <li><strong>Latent Dirichlet Allocation</strong></li>
+  <li><strong>Linear Learner</strong></li>
+  <li><strong>Object2Vec</strong></li>
+  <li><strong>Object Detection</strong></li>
+  <li><strong>Principal Component Analysis (PCA)</strong></li>
+  <li><strong>Random Cut Forest (RCF)</strong></li>
+  <li><strong>Sequence-to-Sequence (seq2seq)</strong></li>
+  <li><strong>XGBoost</strong></li>
+</ul>
+
+<p>…as well as knowing how to import your own (or someone else’s) custom algorithm from outside SageMaker.</p>
+
+<h2 id="other-aws-ai-services">Other AWS AI Services</h2>
+
+<p>After all that heavy ML/DL is can seem like a little light relief to get a question or two about some of AWS’s AI services.  But don’t get complacent, for each of these you should have a good understanding of its use case, its limitations, and how they should be architected.  Especially make sure you understand how to combine these services together to make complete solutions. (These questions are a lot like ‘AWS Architecture’ questions.)</p>
+
+<ul>
+  <li><strong>Rekognition</strong> (Images and Video)</li>
+  <li><strong>Polly</strong></li>
+  <li><strong>Transcribe</strong></li>
+  <li><strong>Lex</strong></li>
+  <li><strong>Translate</strong></li>
+  <li><strong>Comprehend</strong></li>
+</ul>
+
+<h2 id="other-aws-services">Other AWS Services</h2>
+
+<p>A good general understanding of AWS, to at least associate level, will see you through many of the AWS aspects of the questions you will face.  However there are some services that feature more than others, and at times there is a decidedly Big Data feel.</p>
+
+<p>Make sure you are comfortable and preferably have experience with:</p>
+
+<ul>
+  <li><strong>S3</strong> including how to secure your data</li>
+  <li><strong>Athena</strong> including performance</li>
+  <li><strong>Kinesis</strong> Firehose and Analytics for moving data around and transforming</li>
+  <li><strong>Elastic Map Reduce (EMR)</strong> including with Spark</li>
+  <li><strong>AWS Glue</strong></li>
+  <li><strong>QuickSight</strong> including how it sources data from various other services</li>
+</ul>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>So did this exam add anything to the <em>‘which is harder ‘pro’ or ‘specialty’</em> debate?  Well from a 10,000-foot view the exam looked like a ‘pro’ exam:</p>
+
+<ul>
+  <li>The questions were wordy,</li>
+  <li>the answers could be wordy,</li>
+  <li>the time limit is 3 hours</li>
+  <li>there are 65 questions.</li>
+</ul>
+
+<p>But at the end of the day, whether this is harder than a pro exam or not yet again falls to your background:</p>
+
+<ul>
+  <li><strong>If you’re new to ML/DL, this exam is hard.</strong></li>
+  <li><strong>If you’re new to AWS, this exam is hard.</strong></li>
+  <li><strong>If you’re comfortable with ML/DL and AWS, this exam is do-able.</strong></li>
+</ul>
+
+<p>How to prepare for this exam depends a lot on your background.  There really is no substitute for getting hands-on, especially with AWS SageMaker.  AWS has a number of awesome pre-made example Jupyter notebooks should be seen as ‘copy-n-paste’ reference guides even for some production developments.</p>
+
+<p><strong>Now full disclosure</strong> - I work for <a href="https://linuxacademy.com">LinuxAcademy.com</a> as a Training Architect; I create courses, training materials and live practical based labs to help people learn all aspects of the AWS cloud.   Keep an eye on the Linux Academy site for courses to help you pass all the AWS exams.</p>
+
+    
+  </section>
+  
+  <!-- Social media shares -->
+  <div class="share-buttons">
+    <ul class="share-buttons">
+        <div class="meta">Share</div>
+        
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html" target="_blank" title="Share on Facebook">
+			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Facebook</span>
+		</a>
+        </li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?source=https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html&text=Passing+the+AWS+Certified+Machine+Learning+Specialty+Exam%20%7C%20the+Cloud+Tutor:%20https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html" target="_blank" title="Tweet">
+			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Tweet</span>
+		</a>
+        </li>
+         
+        <li>
+            <a href="https://plus.google.com/share?url=https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html" target="_blank" title="Share on Google+">
+			<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Google+</span>
+		</a>
+        </li>
+            
+        <li>
+            <a href="http://www.reddit.com/submit?url=https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html&title=Passing+the+AWS+Certified+Machine+Learning+Specialty+Exam%20%7C%20the+Cloud+Tutor" target="_blank" title="Share on Reddit">
+			<i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Reddit</span>
+		</a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=Passing+the+AWS+Certified+Machine+Learning+Specialty+Exam%20%7C%20the+Cloud+Tutor&body=:%20https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html" target="_blank" title="Email">
+			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Email</span>
+		</a>
+        </li>
+        
+    </ul>
+</div>
+   
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+
+    
+    <a class="button" href="/tags#AI">
+      <p><i class="fa fa-tag fa-fw"></i> AI</p>
+    </a>
+    
+    <a class="button" href="/tags#AWS">
+      <p><i class="fa fa-tag fa-fw"></i> AWS</p>
+    </a>
+    
+    <a class="button" href="/tags#DL">
+      <p><i class="fa fa-tag fa-fw"></i> DL</p>
+    </a>
+    
+    <a class="button" href="/tags#Exam">
+      <p><i class="fa fa-tag fa-fw"></i> Exam</p>
+    </a>
+    
+    <a class="button" href="/tags#ML">
+      <p><i class="fa fa-tag fa-fw"></i> ML</p>
+    </a>
+    
+    <a class="button" href="/tags#MLS-C01">
+      <p><i class="fa fa-tag fa-fw"></i> MLS-C01</p>
+    </a>
+    
+    <a class="button" href="/tags#Specialty">
+      <p><i class="fa fa-tag fa-fw"></i> Specialty</p>
+    </a>
+    
+  </div>
+</footer>
+
+    
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'theCloudTutor';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  
+</div>
+
+
+
+    </div>
+    
+<footer class="site-footer">
+    <p class="text">by Mike G Chambers</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+	<a href="https://thecloudtutor.com/feed.xml" title="Follow RSS feed">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:mike@mikegchambers.com" title="Email">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/mikegchambers" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="http://instagram.com/mikegchambers" title="Follow on Instagram">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/mikegchambers" title="Follow on LinkedIn">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/mikegchambers" title="Follow on Twitter" class="type">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+
+
+  </body>
+</html>

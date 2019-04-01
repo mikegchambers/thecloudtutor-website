@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>the Cloud Tutor</title>
+        <atom:link href="https://thecloudtutor.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <link>https://thecloudtutor.com/</link>
+        <description></description>
+        <pubDate>Mon, 01 Apr 2019 10:13:10 +1000</pubDate>
+        
+        <item>
+            <title>Passing the AWS Certified Machine Learning Specialty Exam</title>
+            <link>https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html</link>
+            <guid isPermaLink="false">/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html</guid>
+            <description>&lt;p&gt;I’ve been put off taking AWS Beta exams ever since the 2016 Security Specialty debacle, so when it came to the &lt;strong&gt;AWS Certified Machine Learning Specialty Exam&lt;/strong&gt; &lt;em&gt;(MLS-C01)&lt;/em&gt;, I decided to wait it out, and I took the ‘real’ exam the first day it was released.  In this post, I will go through my thoughts on the exam, and how to pass it. &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(* Actually it was the second day, but that sounds less dramatic!)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Exam should be called: &lt;strong&gt;&lt;em&gt;The AWS Certified Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL) Specialty Exam&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;Around 50% of the exam is focused on &lt;strong&gt;pure Machine Learning&lt;/strong&gt; or Deep Learning&lt;/li&gt;
+    &lt;li&gt;While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a &lt;strong&gt;good working knowledge&lt;/strong&gt; of the key aspects and be able to do some lite maths&lt;/li&gt;
+    &lt;li&gt;AWS’s flagship ML/DL service - &lt;strong&gt;AWS SageMaker&lt;/strong&gt; - is the single most mentioned service in the exam&lt;/li&gt;
+    &lt;li&gt;Understand how to architect &lt;strong&gt;AWS’s AI API services&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;At times there is a decidedly &lt;strong&gt;Big Data&lt;/strong&gt; feel&lt;/li&gt;
+    &lt;li&gt;If you’re comfortable with ML/DL and AWS, &lt;strong&gt;this exam is do-able&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;I am a Training Architect for &lt;strong&gt;&lt;a href=&quot;https://linuxacademy.com&quot;&gt;Linux Academy&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;general-thoughts&quot;&gt;General Thoughts&lt;/h2&gt;
+
+&lt;p&gt;Let’s get this out of the way right up front;  The &lt;em&gt;AWS Certified Machine Learning Specialty Exam&lt;/em&gt; should actually be called  &lt;strong&gt;The AWS Certified Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL) Specialty Exam&lt;/strong&gt;.  Maybe that would have been too long of a title, but it would be more accurate.&lt;/p&gt;
+
+&lt;p&gt;Naming aside, this is still unlike any of the other AWS exams…&lt;/p&gt;
+
+&lt;p&gt;At the time of writing, each of the other AWS exams focuses on - as you would expect - the AWS services within the subject area of the exam.   This includes the Specialty exams which focus on a deep level of knowledge in their respective areas, Networking, Big Data and, Security but primarily through AWS services and AWS ethos.&lt;/p&gt;
+
+&lt;p&gt;The AWS Certified Machine Learning Specialty Exam is different, as around 50% of the exam is focused on pure Machine Learning or Deep Learning. This means you could gain a reasonable percentage in this exam with no knowledge of AWS at all. &lt;em&gt;(But you wouldn’t pass!)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;subject-breakdown&quot;&gt;Subject Breakdown&lt;/h3&gt;
+&lt;p&gt;(As usual) forget the AWS Exam Guide, here is the breakdown:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Subject&lt;/th&gt;
+      &lt;th&gt;Percentage&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ML/DL&lt;/td&gt;
+      &lt;td&gt;50%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;AWS SageMaker&lt;/td&gt;
+      &lt;td&gt;25%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Other AWS Services&lt;/td&gt;
+      &lt;td&gt;25%&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Let’s look into each of these subject areas in more detail:&lt;/p&gt;
+
+&lt;h2 id=&quot;machine-learning--deep-learning&quot;&gt;Machine Learning / Deep Learning&lt;/h2&gt;
+
+&lt;p&gt;By far the biggest portion of the exam is dedicated to proving your knowledge of ML and DL.  While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a good working knowledge of the key aspects and be able to do some lite maths.&lt;/p&gt;
+
+&lt;p&gt;You need to have a solid grasp on these concepts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understand the difference between &lt;strong&gt;supervised&lt;/strong&gt;, &lt;strong&gt;unsupervised&lt;/strong&gt; and &lt;strong&gt;reinforcement&lt;/strong&gt; learning.&lt;/li&gt;
+  &lt;li&gt;Know the purpose behind &lt;strong&gt;training&lt;/strong&gt;, &lt;strong&gt;validation&lt;/strong&gt; and &lt;strong&gt;testing&lt;/strong&gt; data and how its managed.&lt;/li&gt;
+  &lt;li&gt;Have a general understanding of &lt;strong&gt;hyperparameters&lt;/strong&gt; and some of the common ones used by various algorithms.&lt;/li&gt;
+  &lt;li&gt;Understand &lt;strong&gt;regularisation&lt;/strong&gt;, what it does and some ways to achieve it.&lt;/li&gt;
+  &lt;li&gt;Know about &lt;strong&gt;regression&lt;/strong&gt;, and &lt;strong&gt;gradient decent&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You should know about ‘input data’:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Data &lt;strong&gt;Visualisation&lt;/strong&gt; using Jupyter notebooks, but also other tools like &lt;strong&gt;AWS QuickSight&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Understand &lt;strong&gt;Feature engineering&lt;/strong&gt; and when to use what technique.&lt;/li&gt;
+  &lt;li&gt;Know what to do when data in unbalanced or missing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You need to know when to use &lt;strong&gt;which model types&lt;/strong&gt; (algorithms) - and &lt;strong&gt;what they are&lt;/strong&gt;, and some high level &lt;strong&gt;configuration&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Logistical Regression&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Linear Regression&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Support Vector Machines&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Decision Trees / Random Forests&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;K-means Clustering&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;K-Nearest Neighbours&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And you need to have a good understanding of &lt;strong&gt;deep learning&lt;/strong&gt; models and their uses:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Convolutional Neural Networks&lt;/strong&gt; (CNN)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Recurrent Neural Networks&lt;/strong&gt; (RNN)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Many questions focus on how to &lt;strong&gt;measure&lt;/strong&gt;, understand and improve the &lt;strong&gt;performance&lt;/strong&gt; of ML/DL models.  You might get questions with graphs and charts, and be expected to make calculations.   You should understand:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Accuracy&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Gini Impurity&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Confusion Matrix&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;F1 Score&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sensitivity / Specificity&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Precision&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Recall&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All of the above is from the point of view of ML/DL computer science.  There is no AWS knowledge in the above.  That all follows on from here…&lt;/p&gt;
+
+&lt;h2 id=&quot;aws-sagemaker&quot;&gt;AWS SageMaker&lt;/h2&gt;
+
+&lt;p&gt;AWS’s flagship ML/DL service - &lt;strong&gt;AWS SageMaker&lt;/strong&gt; - is the single most mentioned service in the exam.  That should come as no surprise.&lt;/p&gt;
+
+&lt;p&gt;AWS has dropped its ‘support’ for &lt;strong&gt;AWS ML&lt;/strong&gt; which is no longer available to anyone who’s not already using it - however, AWS ML still popped up in a couple of answers in this exam.&lt;/p&gt;
+
+&lt;p&gt;For the exam you should know:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What SageMaker &lt;strong&gt;actually is&lt;/strong&gt;, and generally speaking how it’s architected&lt;/li&gt;
+  &lt;li&gt;How &lt;strong&gt;Jupyter notebooks&lt;/strong&gt; fit into SageMaker and how they are used&lt;/li&gt;
+  &lt;li&gt;How to access &lt;strong&gt;secure data&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;How to &lt;strong&gt;secure a Jupyter Notebook&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;How you &lt;strong&gt;train&lt;/strong&gt; models&lt;/li&gt;
+  &lt;li&gt;How to &lt;strong&gt;deploy&lt;/strong&gt; models&lt;/li&gt;
+  &lt;li&gt;Know about &lt;strong&gt;Hyperparameter Optimisation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It goes without saying that you should have a general knowledge of all the AWS optimized algorithms, including:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;BlazingText&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Image Classification Algorithm&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;K-Means&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;K-Nearest Neighbours&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Latent Dirichlet Allocation&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Linear Learner&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Object2Vec&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Object Detection&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Principal Component Analysis (PCA)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Random Cut Forest (RCF)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sequence-to-Sequence (seq2seq)&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;XGBoost&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;…as well as knowing how to import your own (or someone else’s) custom algorithm from outside SageMaker.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-aws-ai-services&quot;&gt;Other AWS AI Services&lt;/h2&gt;
+
+&lt;p&gt;After all that heavy ML/DL is can seem like a little light relief to get a question or two about some of AWS’s AI services.  But don’t get complacent, for each of these you should have a good understanding of its use case, its limitations, and how they should be architected.  Especially make sure you understand how to combine these services together to make complete solutions. (These questions are a lot like ‘AWS Architecture’ questions.)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Rekognition&lt;/strong&gt; (Images and Video)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Polly&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Transcribe&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Lex&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Translate&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Comprehend&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;other-aws-services&quot;&gt;Other AWS Services&lt;/h2&gt;
+
+&lt;p&gt;A good general understanding of AWS, to at least associate level, will see you through many of the AWS aspects of the questions you will face.  However there are some services that feature more than others, and at times there is a decidedly Big Data feel.&lt;/p&gt;
+
+&lt;p&gt;Make sure you are comfortable and preferably have experience with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;S3&lt;/strong&gt; including how to secure your data&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Athena&lt;/strong&gt; including performance&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Kinesis&lt;/strong&gt; Firehose and Analytics for moving data around and transforming&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Elastic Map Reduce (EMR)&lt;/strong&gt; including with Spark&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AWS Glue&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;QuickSight&lt;/strong&gt; including how it sources data from various other services&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;So did this exam add anything to the &lt;em&gt;‘which is harder ‘pro’ or ‘specialty’&lt;/em&gt; debate?  Well from a 10,000-foot view the exam looked like a ‘pro’ exam:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The questions were wordy,&lt;/li&gt;
+  &lt;li&gt;the answers could be wordy,&lt;/li&gt;
+  &lt;li&gt;the time limit is 3 hours&lt;/li&gt;
+  &lt;li&gt;there are 65 questions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But at the end of the day, whether this is harder than a pro exam or not yet again falls to your background:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;If you’re new to ML/DL, this exam is hard.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;If you’re new to AWS, this exam is hard.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;If you’re comfortable with ML/DL and AWS, this exam is do-able.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to prepare for this exam depends a lot on your background.  There really is no substitute for getting hands-on, especially with AWS SageMaker.  AWS has a number of awesome pre-made example Jupyter notebooks should be seen as ‘copy-n-paste’ reference guides even for some production developments.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Now full disclosure&lt;/strong&gt; - I work for &lt;a href=&quot;https://linuxacademy.com&quot;&gt;LinuxAcademy.com&lt;/a&gt; as a Training Architect; I create courses, training materials and live practical based labs to help people learn all aspects of the AWS cloud.   Keep an eye on the Linux Academy site for courses to help you pass all the AWS exams.&lt;/p&gt;
+</description>
+            <pubDate>Mon, 18 Mar 2019 00:00:00 +1000</pubDate>
+        </item>
+        
+    </channel>
+</rss>
