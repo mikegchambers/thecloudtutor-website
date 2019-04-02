@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>the Cloud Tutor</title>
-        <atom:link href="https://thecloudtutor.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <link>https://thecloudtutor.com/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <link>http://localhost:4000/</link>
         <description></description>
-        <pubDate>Mon, 01 Apr 2019 10:13:10 +1000</pubDate>
+        <pubDate>Tue, 02 Apr 2019 13:33:39 +1000</pubDate>
         
         <item>
             <title>Passing the AWS Certified Machine Learning Specialty Exam</title>
-            <link>https://thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html</link>
+            <link>http://localhost:4000/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html</link>
             <guid isPermaLink="false">/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html</guid>
             <description>&lt;p&gt;I’ve been put off taking AWS Beta exams ever since the 2016 Security Specialty debacle, so when it came to the &lt;strong&gt;AWS Certified Machine Learning Specialty Exam&lt;/strong&gt; &lt;em&gt;(MLS-C01)&lt;/em&gt;, I decided to wait it out, and I took the ‘real’ exam the first day it was released.  In this post, I will go through my thoughts on the exam, and how to pass it. &lt;!--more--&gt;&lt;/p&gt;
 
@@ -20,7 +20,7 @@
   &lt;ul&gt;
     &lt;li&gt;Exam should be called: &lt;strong&gt;&lt;em&gt;The AWS Certified Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL) Specialty Exam&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
     &lt;li&gt;Around 50% of the exam is focused on &lt;strong&gt;pure Machine Learning&lt;/strong&gt; or Deep Learning&lt;/li&gt;
-    &lt;li&gt;While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a &lt;strong&gt;good working knowledge&lt;/strong&gt; of the key aspects and be able to do some lite maths&lt;/li&gt;
+    &lt;li&gt;While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a &lt;strong&gt;good working knowledge&lt;/strong&gt; of the key aspects and be able to do some simple maths&lt;/li&gt;
     &lt;li&gt;AWS’s flagship ML/DL service - &lt;strong&gt;AWS SageMaker&lt;/strong&gt; - is the single most mentioned service in the exam&lt;/li&gt;
     &lt;li&gt;Understand how to architect &lt;strong&gt;AWS’s AI API services&lt;/strong&gt;&lt;/li&gt;
     &lt;li&gt;At times there is a decidedly &lt;strong&gt;Big Data&lt;/strong&gt; feel&lt;/li&gt;
@@ -69,7 +69,7 @@
 
 &lt;h2 id=&quot;machine-learning--deep-learning&quot;&gt;Machine Learning / Deep Learning&lt;/h2&gt;
 
-&lt;p&gt;By far the biggest portion of the exam is dedicated to proving your knowledge of ML and DL.  While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a good working knowledge of the key aspects and be able to do some lite maths.&lt;/p&gt;
+&lt;p&gt;By far the biggest portion of the exam is dedicated to proving your knowledge of ML and DL.  While you don’t need a deep understanding of the statistical mathematics and probability behind the subject you need a good working knowledge of the key aspects and be able to do some simple maths.&lt;/p&gt;
 
 &lt;p&gt;You need to have a solid grasp on these concepts:&lt;/p&gt;
 
@@ -190,10 +190,10 @@
 &lt;p&gt;So did this exam add anything to the &lt;em&gt;‘which is harder ‘pro’ or ‘specialty’&lt;/em&gt; debate?  Well from a 10,000-foot view the exam looked like a ‘pro’ exam:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The questions were wordy,&lt;/li&gt;
-  &lt;li&gt;the answers could be wordy,&lt;/li&gt;
-  &lt;li&gt;the time limit is 3 hours&lt;/li&gt;
-  &lt;li&gt;there are 65 questions.&lt;/li&gt;
+  &lt;li&gt;The questions were wordy&lt;/li&gt;
+  &lt;li&gt;The answers could be wordy&lt;/li&gt;
+  &lt;li&gt;The time limit is 3 hours&lt;/li&gt;
+  &lt;li&gt;There are 65 questions&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;But at the end of the day, whether this is harder than a pro exam or not yet again falls to your background:&lt;/p&gt;

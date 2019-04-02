@@ -2,6 +2,8 @@
 layout: post
 title: Passing the AWS Certified Machine Learning Specialty Exam
 tags: [MLS-C01, AWS, Exam, Specialty, ML, DL, AI]
+feature-img: assets/img/pexels/action-ai-android-595804.jpg
+thumbnail : assets/img/pexels/action-ai-android-595804.jpg
 excerpt_separator: <!--more-->
 ---
 
