@@ -19,8 +19,6 @@ _(* Actually it was the second day, but that sounds less dramatic!)_
 - Understand how to architect **AWS's AI API services**
 - At times there is a decidedly **Big Data** feel
 - If you’re comfortable with ML/DL and AWS, **this exam is do-able**
-- I am a Training Architect for **[Linux Academy](https://linuxacademy.com)**
-
 
 ## General Thoughts
 
@@ -159,5 +157,3 @@ But at the end of the day, whether this is harder than a pro exam or not yet aga
 - **If you're comfortable with ML/DL and AWS, this exam is do-able.**
 
 How to prepare for this exam depends a lot on your background.  There really is no substitute for getting hands-on, especially with AWS SageMaker.  AWS has a number of awesome pre-made example Jupyter notebooks should be seen as 'copy-n-paste' reference guides even for some production developments.  
-
-**Now full disclosure** - I work for [LinuxAcademy.com](https://linuxacademy.com) as a Training Architect; I create courses, training materials and live practical based labs to help people learn all aspects of the AWS cloud.   Keep an eye on the Linux Academy site for courses to help you pass all the AWS exams.
