@@ -156,4 +156,4 @@ But at the end of the day, whether this is harder than a pro exam or not yet aga
 - **If you're new to AWS, this exam is hard.**
 - **If you're comfortable with ML/DL and AWS, this exam is do-able.**
 
-How to prepare for this exam depends a lot on your background.  There really is no substitute for getting hands-on, especially with AWS SageMaker.  AWS has a number of awesome pre-made example Jupyter notebooks should be seen as 'copy-n-paste' reference guides even for some production developments.  
+Preparing for this exam depends a lot on your background.  There really is no substitute for getting hands-on, especially with AWS SageMaker.  AWS has a number of awesome pre-made example Jupyter notebooks should be seen as 'copy-n-paste' reference guides even for some production developments.  
