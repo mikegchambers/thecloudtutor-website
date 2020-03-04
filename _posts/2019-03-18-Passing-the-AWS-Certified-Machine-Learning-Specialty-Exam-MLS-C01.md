@@ -24,7 +24,7 @@ _(* Actually it was the second day, but that sounds less dramatic!)_
 
 Let's get this out of the way right up front;  The *AWS Certified Machine Learning Specialty Exam* should actually be called  **The AWS Certified Artificial Intelligence (AI), Machine Learning (ML) and Deep Learning (DL) Specialty Exam**.  More verbose (to say the least) but it would be accurate.
 
-However naming aside, this is still unlike any of the other AWS exams...
+Naming aside, this is still unlike any of the other AWS exams...
 
 At the time of writing, each of the other AWS exams focuses on - as you would expect - the AWS services within the subject area of the exam.   This includes the Specialty exams which focus on a deep level of knowledge in their respective areas, Networking, Big Data and, Security but primarily through AWS services and AWS ethos.  
 
