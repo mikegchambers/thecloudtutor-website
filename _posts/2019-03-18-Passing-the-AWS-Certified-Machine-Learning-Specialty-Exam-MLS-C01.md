@@ -150,7 +150,7 @@ So did this exam add anything to the _'which is harder 'pro' or 'specialty'_ deb
 - The time limit is 3 hours 
 - There are 65 questions
 
-But at the end of the day, whether this is harder than a pro exam or not yet again falls to your background:
+But at the end of the day, whether this is harder than a pro exam or not, yet again falls to your background:
 
 - **If you're new to ML/DL, this exam is hard.**
 - **If you're new to AWS, this exam is hard.**
